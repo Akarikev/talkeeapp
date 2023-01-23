@@ -8,10 +8,10 @@ function LoginPage() {
 
   const signInwithGoogle = async () => {
     const result = await signInWithPopup(auth, provider);
-    console.log(
-      "🚀 ~ file: LoginPage.tsx:8 ~ signInwithGoogle ~ result",
-      result
-    );
+    // console.log(
+    //   "🚀 ~ file: LoginPage.tsx:8 ~ signInwithGoogle ~ result",
+    //   result
+    // );
     navigate("/");
   };
 
