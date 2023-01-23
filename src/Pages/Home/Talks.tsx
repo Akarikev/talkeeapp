@@ -103,7 +103,11 @@ function Talks(props: Props) {
           {userLiked ? <>👎</> : <>👍</>}
         </button>
 
-        {likes && <p>Likes: {likes?.length}</p>}
+        {likes && (
+          <p>
+            Likes: <code>{likes?.length}</code>
+          </p>
+        )}
       </div>
     </div>
   );

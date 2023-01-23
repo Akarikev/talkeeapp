@@ -40,7 +40,7 @@ function Homescreen() {
         <p>listen to my new single out on all platforms!</p>
         <p className="names">@princeemusic</p>
         <button>👍</button>
-        <p className="names">Likes: 2M</p>
+        <p className="names">Likes: 205k</p>
       </div>
 
       <div>

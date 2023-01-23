@@ -57,6 +57,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   margin-right: 5px;
+  transition: all 400ms ease-in-out;
   
 }
 button:hover {
@@ -155,6 +156,7 @@ input:focus{
 color: #61dafbaa; 
   will-change: filter;
   font-weight: bold;
+  padding: 1em;
 }
 
 .body p{
@@ -186,6 +188,8 @@ font-weight: bold;
 
 .vite{
   color: rgba(241, 15, 223, 0.952);
+  font-size: 95px;
+  transition: all 400ms ease;
 
 }
 
