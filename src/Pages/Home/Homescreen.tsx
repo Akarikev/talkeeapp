@@ -1,9 +1,9 @@
 function Homescreen() {
   return (
     <div>
-      <h1>Talkee</h1>
+      <h1 className="vite">Talkee</h1>
 
-      <p style={{ fontStyle: "italic" }}>Post your feels</p>
+      <p className="react">Post your feels</p>
     </div>
   );
 }

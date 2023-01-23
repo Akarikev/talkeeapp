@@ -74,6 +74,7 @@ input{
  margin-right: 12px;
  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
  transition: 400ms ease; 
+
 }
 
 input:focus{
@@ -93,6 +94,11 @@ input:focus{
  box-shadow: 10px 10px 1px  rgba(52, 49, 247, 6);
  margin-bottom: 25px;
 
+
+}
+
+.talks :hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 
@@ -103,7 +109,8 @@ input:focus{
   border-radius: 1px;
   outline: 1px solid #646cff;
   outline: 1px solid #646cff; 
-  box-shadow: 7px 6px .5px  rgba(52, 49, 247, 6); 
+  box-shadow: 7px 6px .5px  rgba(52, 49, 247, 6);
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 .react{
   transition: 400ms ease;
