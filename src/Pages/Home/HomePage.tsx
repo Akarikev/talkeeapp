@@ -4,6 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { getDocs, collection } from "firebase/firestore";
 import { useState } from "react";
 import Talks from "./Talks";
+import Homescreen from "./Homescreen";
 
 export interface talksProps {
   id: string;
@@ -31,11 +32,18 @@ function HomePage() {
 
   return (
     <div>
-      <h4> {user && "Hello, " + user.displayName} </h4>
       <div>
-        {talkList?.map((talk) => (
-          <Talks talk={talk} />
-        ))}
+        <h4 className="userNames">
+          {" "}
+          {!user
+            ? "Hello, Welcome to talkee"
+            : "Hello, " + user?.displayName}{" "}
+        </h4>
+        {!user ? (
+          <Homescreen />
+        ) : (
+          talkList?.map((talk) => <Talks talk={talk} />)
+        )}
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import {
   getDocs,
   deleteDoc,
   doc,
+  updateDoc,
 } from "firebase/firestore";
 import { auth, db } from "../../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -87,7 +88,7 @@ function Talks(props: Props) {
   const userLiked = likes?.find((like) => like.userId === user?.uid);
 
   return (
-    <div>
+    <div className="talks">
       <div className="title">
         <h2>{talk.title}</h2>
       </div>
