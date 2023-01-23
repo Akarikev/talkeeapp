@@ -36,8 +36,8 @@ function HomePage() {
         <h4 className="userNames">
           {" "}
           {!user
-            ? "Hello, Welcome to talkee"
-            : "Hello, " + user?.displayName}{" "}
+            ? "Hello, Welcome to Talkee 🎉"
+            : "Hello, " + user?.displayName + "🎉"}{" "}
         </h4>
         {!user ? (
           <Homescreen />
