@@ -1,0 +1,39 @@
+.navbar  {
+width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+
+.header{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+ padding-right: 11px;
+padding-top: 20px;
+
+ 
+}
+
+
+.Links:hover{
+  color: red;
+}
+
+.displayData {
+  display: flex;
+  margin-right: 5px;
+  gap: 1em;
+}
+
+img{
+  border-radius: 50%;
+ margin-top: -10px;
+}
+
+.displayData p {
+  margin-top: -1px;
+}
+
