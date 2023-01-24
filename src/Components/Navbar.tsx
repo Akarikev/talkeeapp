@@ -10,13 +10,14 @@ function Navbar() {
 
   const linkStyle = {
     textDecoration: "none",
-    color: "white",
+    color: "#61dafbaa",
     border: "1px solid blue",
     padding: "11px",
     borderRadius: "1px",
     borderTop: "none",
     borderLeft: "none",
     borderRight: "none",
+    filter: "drop-shadow(0 0 .1em #61dafbaa)",
   };
 
   const [user] = useAuthState(auth);

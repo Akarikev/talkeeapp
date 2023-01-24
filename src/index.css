@@ -134,7 +134,7 @@ input:focus{
  margin-left: 25px;
  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
  transition: 400ms ease; 
- outline: 1px solid white;
+ outline: 1px solid magenta;
  box-shadow:  rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
  margin-bottom: 25px; 
 }
@@ -143,7 +143,7 @@ input:focus{
 .userNames {
   padding: 1rem;
   margin-right: 25px;
-  margin-left: 25px;
+  margin-left: px;
   border-radius: 1px;
   outline: 1px solid #646cff;
 
