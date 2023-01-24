@@ -66,6 +66,14 @@ function Homescreen() {
       <br />
       <footer className="names">
         <code>&copy; 2023, Talkee.app +233 208 448 895</code>
+        <br />
+        <a
+          target="_blank"
+          href="https://www.privacypolicytemplate.net/live.php?token=wblbzfsezxEQCzCuRvpDm28b1ZjmNXDm"
+          style={{ color: "blue" }}
+        >
+          Privacy Policy
+        </a>
       </footer>
     </div>
   );
