@@ -190,9 +190,20 @@ font-weight: bold;
   color: rgba(241, 15, 223, 0.952);
   font-size: 95px;
   transition: all 400ms ease;
-
+  cursor: pointer;
 }
 
+.vite2{
+  color: rgba(241, 15, 223, 0.952);
+  font-weight: bold;
+  font-size: 40px;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+
+.vite2:hover{
+  filter: drop-shadow(0 0 2em rgba(241, 15, 223, 0.952));
+}
 .react:hover{
   filter: drop-shadow(0 0 2em #61dafbaa);
 }

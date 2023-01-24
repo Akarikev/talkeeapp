@@ -65,7 +65,7 @@ function Homescreen() {
       </div>
       <br />
       <footer className="names">
-        <code>&copy; 2023, Talkee.app</code>
+        <code>&copy; 2023, Talkee.app +233 208 448 895</code>
       </footer>
     </div>
   );

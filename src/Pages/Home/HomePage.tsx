@@ -32,6 +32,7 @@ function HomePage() {
 
   return (
     <div>
+      {user ? <h1 className="vite2">Talkee 🎉🎊</h1> : ""}
       <div>
         <h4 className="userNames">
           {" "}
