@@ -11,8 +11,11 @@ function Homescreen() {
       <h1 className="vite">Talkee 🎉🎊</h1>
 
       <p className="react">
-        Post your feels, and let your share their thoughts about your feels!🎉🎈
-        Join the new community, and share your thoughts!
+        Post your feels, and share your thoughts about your feels!🎉🎈 Join the
+        new community, by logging in{" "}
+        <code style={{ color: "red" }}>
+          ANONYMOUSLY! 🥷🏾 everythin' stays here!
+        </code>
       </p>
 
       <div className="box2">
@@ -28,7 +31,7 @@ function Homescreen() {
       <div className="box">
         <h3 className="titled">New Jordans</h3>
         <p>The new Jordans are amazing just got them stocked up!</p>
-        <p className="names">@John Doe</p>
+        <p className="names">@superman</p>
         <button>👍</button>
         <p className="names">Likes: 2k</p>
       </div>
@@ -38,13 +41,26 @@ function Homescreen() {
       <div className="box3">
         <h3 className="titled">NEW SINGLE OUT NOW!</h3>
         <p>listen to my new single out on all platforms!</p>
-        <p className="names">@princeemusic</p>
+        <p className="names">@anonymous user</p>
         <button>👍</button>
         <p className="names">Likes: 205k</p>
       </div>
 
+      <div className="box2">
+        <h3 className="titled">The New feels app!🎉</h3>
+        <p>
+          post your feels on the new feels app, let your friends like your feels
+        </p>
+        <p className="names">@proudbanana</p>
+        <button>👍</button>
+        <p className="names">Likes: 2M</p>
+      </div>
+
       <div>
         <p className="names">Create your feels the way you want it!</p>
+        <p className="names">
+          nobody gonna know its you! you're anonymous! 🐱‍💻
+        </p>
       </div>
 
       <div>
@@ -59,8 +75,9 @@ function Homescreen() {
       <br />
       <div>
         <code>
-          App is in <span>beta development,</span> meaning, some few things
-          might break!😭, i hope you'd enjoy this little project of mine.🎁
+          App is in <span className="names">beta development,</span> meaning,
+          some few things might break!😭, i hope you'd enjoy this little project
+          of mine.🎁
         </code>
       </div>
       <br />

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { talksProps } from "./HomePage";
 import { useNavigate } from "react-router-dom";
+import { usersname } from "./HomePage";
 import {
   addDoc,
   collection,
@@ -13,7 +14,6 @@ import {
 } from "firebase/firestore";
 import { auth, db } from "../../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { filter } from "lodash";
 
 interface Props {
   talk: talksProps;
@@ -29,6 +29,15 @@ function Talks(props: Props) {
   const { talk } = props;
 
   const [user] = useAuthState(auth);
+
+  // const anonymous = () => {
+  //   if (user?.isAnonymous === true){
+  //     <p>Anonymous user</p>
+  //   } else {
+  //     user.isAnonymous? <p>Anonymous</p> : <p>Not Anonymous</p
+  //   }
+
+  // }
 
   const getLikes = async () => {
     const data = await getDocs(likesDoc);
@@ -86,7 +95,7 @@ function Talks(props: Props) {
   };
 
   const userLiked = likes?.find((like) => like.userId === user?.uid);
-
+  let username = localStorage.getItem("tempUser");
   return (
     <div className="talks">
       <div className="title">
@@ -98,7 +107,11 @@ function Talks(props: Props) {
       </div>
 
       <div className="footer">
-        <p>@{talk.username}</p>
+        <p>
+          @{talk.username}
+          {/* @{user?.isAnonymous ? (username ? username : "anonymous user") : ""} */}
+        </p>
+
         <button onClick={userLiked ? removeLike : addLike}>
           {userLiked ? <>👎</> : <>👍</>}
         </button>

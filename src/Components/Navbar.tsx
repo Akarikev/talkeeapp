@@ -4,6 +4,7 @@ import { auth } from "../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import "../Pages/css/navbar.css";
 import { signOut } from "firebase/auth";
+import { printEmoj } from "../Pages/Home/HomePage";
 
 function Navbar() {
   const navBar = `color: red`;
@@ -43,8 +44,7 @@ function Navbar() {
         <div className="displayData">
           {user && (
             <>
-              <p>{user?.displayName}</p>
-              <img src={user?.photoURL || ""} width="30" height="30" />
+              <p>{printEmoj}</p>
               <button onClick={signUserOut} className="signout">
                 Log out
               </button>

@@ -14,6 +14,134 @@ export interface talksProps {
   description: string;
 }
 
+const allowedEmoji = [
+  ..."✌",
+  "😂",
+  "😝",
+  "😁",
+  "😱",
+  "👉",
+  "🙌",
+  "🍻",
+  "🔥",
+  "🌈",
+  "☀",
+  "🎈",
+  "🌹",
+  "💄",
+  "🎀",
+  "⚽",
+  "🎾",
+  "🏁",
+  "😡",
+  "👿",
+  "🐻",
+  "🐶",
+  "🐬",
+  "🐟",
+  "🍀",
+  "👀",
+  "🚗",
+  "🍎",
+  "💝",
+  "💙",
+  "👌",
+  "❤",
+  "😍",
+  "😉",
+  "😓",
+  "😳",
+  "💪",
+  "💩",
+  "🍸",
+  "🔑",
+  "💖",
+  "🌟",
+  "🎉",
+  "🌺",
+  "🎶",
+  "👠",
+  "🏈",
+  "⚾",
+  "🏆",
+  "👽",
+  "💀",
+  "🐵",
+  "🐮",
+  "🐩",
+  "🐎",
+  "💣",
+  "👃",
+  "👂",
+  "🍓",
+  "💘",
+  "💜",
+  "👊",
+  "💋",
+  "😘",
+  "😜",
+  "😵",
+  "🙏",
+  "👋",
+  "🚽",
+  "💃",
+  "💎",
+  "🚀",
+  "🌙",
+  "🎁",
+  "⛄",
+  "🌊",
+  "⛵",
+  "🏀",
+  "🎱",
+  "💰",
+  "👶",
+  "👸",
+  "🐰",
+  "🐷",
+  "🐍",
+  "🐫",
+  "🔫",
+  "👄",
+  "🚲",
+  "🍉",
+  "💛",
+  "💚",
+];
+export const printEmoj = [...allowedEmoji][
+  Math.floor(Math.random() * allowedEmoji.length)
+];
+
+var a = [
+  "small",
+  "blue",
+  "ugly",
+  "jack",
+  "wicked",
+  "super",
+  "red",
+  "green",
+  "Yellow",
+  "badass",
+];
+var b = [
+  "bear",
+  "dog",
+  "banana",
+  "pool",
+  "john",
+  "man",
+  "orange",
+  "super",
+  "68",
+  "drunk",
+];
+
+var rA = Math.floor(Math.random() * a.length);
+var rB = Math.floor(Math.random() * b.length);
+export var usersname: string = a[rA] + b[rB];
+localStorage.setItem("tempUser", usersname);
+
 function HomePage() {
   const [user] = useAuthState(auth);
   const talkRef = collection(db, "post");
@@ -38,7 +166,7 @@ function HomePage() {
           {" "}
           {!user
             ? "Hello, Welcome to Talkee 🎉"
-            : "Hello, " + user?.displayName + "🎉"}{" "}
+            : "Hello, " + usersname + " " + printEmoj}{" "}
         </h4>
         {!user ? (
           <Homescreen />

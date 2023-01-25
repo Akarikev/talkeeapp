@@ -5,7 +5,7 @@ import { addDoc, collection } from "firebase/firestore";
 import { auth, db } from "../../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
-
+import { usersname } from "../Home/HomePage";
 interface createFormData {
   title: string;
   description: string;
@@ -35,14 +35,15 @@ function Createform() {
   const oncreateTalk = async (data: createFormData) => {
     await addDoc(talkRef, {
       ...data,
-      username: user?.displayName,
+      username: localStorage.getItem("tempUser"),
+
       userId: user?.uid,
-      numOfLikes: data.numOfLike || 0,
     });
     navigate("/");
 
     console.log(data);
   };
+
   return (
     <div className="post-form">
       <form onSubmit={handleSubmit(oncreateTalk)}>
