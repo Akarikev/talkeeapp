@@ -37,7 +37,9 @@ function Navbar() {
               Login
             </Link>
           ) : (
-            <Link to="/createtalk">Post a feel</Link>
+            <Link to="/createtalk" style={linkStyle}>
+              Post a feel
+            </Link>
           )}
         </div>
 
