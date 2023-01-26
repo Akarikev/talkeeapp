@@ -123,6 +123,7 @@ var a = [
   "green",
   "Yellow",
   "badass",
+  "cultural",
 ];
 var b = [
   "bear",
@@ -135,6 +136,7 @@ var b = [
   "super",
   "68",
   "drunk",
+  "vult",
 ];
 
 var rA = Math.floor(Math.random() * a.length);
